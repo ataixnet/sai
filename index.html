@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Kwan: A Financial Advisor</title>
+	<meta name="description" content="Online coding course to learn modern and in demand web development skills.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      color: #222;
+      font-family: 'Noto Sans', sans-serif;
+      padding: 0 36px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .overall-page-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      box-sizing: border-box;
+      padding-top: 50px;
+
+    }
+
+    h2.question {
+      color: #848484;
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin: 0 0 10px 0;
+      border-radius: 15px;
+      padding: 10px 17px;
+      background: linear-gradient(90deg, #f0f0f0 10%, rgba(217, 217, 217, 0.00) 70.07%);
+      position: relative;
+      left: -17px;
+    }
+
+    p.answer {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin: 0 0 47px 0;
+      line-height: 1.3;
+    }
+
+    p.answer strong {
+      font-weight: 800;
+    }
+
+    .instructor-panel {
+      max-width: 400px;
+      margin: 0 auto;
+      color: #3f5a74;
+    }
+
+    .join-new-course-btn {
+      font-size: 1.25rem;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: #1C5D99;
+      background: linear-gradient(to bottom, #3d91e0, #1C5D99);
+      color: #FFF;
+      font-weight: 700;
+      padding: 20px 24px;
+      display: inline-block;
+      margin: 0 0 60px 0;
+    }
+
+    .join-new-course-btn:hover {
+      background: linear-gradient(to bottom, #62b3ff, #1e61a0);
+    }
+
+    @media screen and (min-width: 800px) {
+      .join-new-course-btn {
+        margin: 0;
+      }
+
+      .instructor-panel {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        max-width: 245px;
+      }
+
+      .overall-page-wrapper {
+        max-width: 800px;
+        padding-right: 290px;
+      }
+    }
+
+    .instructor-panel-interior {
+      position: relative;
+      top: -80px;
+      margin-bottom: -80px;
+      background-color: #d9e5f6;
+      border-radius: 12px;
+      padding: 90px 0 0 0;
+    }
+
+    .instructor-panel h3 {
+      text-align: center;
+      margin: 0;
+      font-weight: normal;
+      font-size: 1.3rem;
+    }
+
+    .instructor-panel h4 {
+      text-align: center;
+      margin: 0 0 15px 0;
+      font-size: 1rem;
+    }
+
+    .instructor-panel ul {
+      margin: 0;
+      padding: 0 20px 0 30px;
+      font-size: .85rem;
+      line-height: 1.5;
+    }
+
+    .instructor-panel li {
+      padding-bottom: 7px;
+    }
+
+    .instructor-btn-wrap {
+      margin-top: -5px;
+      text-align: center;
+    }
+
+    .instructor-btn {
+      font-weight: bold;
+      font-size: 1rem;
+      background-color: #1C5D99;
+      background: linear-gradient(to bottom, #3d91e0, #1C5D99);
+      display: inline-block;
+      padding: 15px 22px;
+      color: #FFF;
+      border-radius: 8px;
+      text-decoration: none;
+      transform: translateY(50%);
+    }
+
+    .instructor-btn:hover {
+      background: linear-gradient(to bottom, #62b3ff, #1e61a0);
+    }
+
+    .brad-photo {
+      border-radius: 50%;
+      width: 136px;
+      height: 136px;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .full-price {
+      color: #999;
+    }
+
+    ul.skills-list {
+      font-weight: 300;
+      margin-bottom: 47px;
+      line-height: 1.5;
+    }
+
+    .full-site-links {
+      padding: 80px 0 30px 0;
+      max-width: 420px;
+    }
+
+    .full-site-links ul {
+      font-size: .85rem;
+      list-style: none;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .full-site-links li {
+      display: inline;
+      margin-right: 8px;
+    }
+
+    .full-site-links a {
+      color: #bebebe;
+      white-space: nowrap;
+    }
+
+    .footer-text {
+      font-size: .85rem;
+      color: #a3a3a3;
+      margin: 0 0 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overall-page-wrapper">
+
+    <h2 class="question">How do you start a career in coding?</h2>
+    <p class="answer" style="font-size: 2.6rem;">By building <strong>confidence.</strong></p>
+
+    <h2 class="question">Can I do it? Am I smart enough?</h2>
+    <p class="answer" style="font-size: 1.6rem;">Yes. Coding is actually an <strong>emotional challenge</strong>, not an
+      intellectual one.</p>
+
+    <h2 class="question">How will I stay emotionally motivated?</h2>
+    <p class="answer" style="font-size: 1.4rem;">Let me take you <strong>under my wing</strong> through a 20 hour
+      journey of projects, practice and patience; encouraging
+      you along the way.</p>
+
+    <h2 class="question">Do I need to know anything before I start?</h2>
+    <p class="answer" style="font-size: 1.25rem;">No. All you need is a <strong>computer</strong> and an <strong>open
+        mind.</strong></p>
+
+    <h2 class="question">What will I gain experience with?</h2>
+    <p class="answer" style="font-size: 1.25rem; margin-bottom: 0;">The core skills that development teams look for:</p>
+
+    <ul class="skills-list" style="font-size: 1.25rem;">
+      <li>Figma</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React &amp; Next.js</li>
+      <li>Git &amp; GitHub</li>
+      <li>MongoDB</li>
+      <li>Node.js &amp; NPM</li>
+      <li>Express.js</li>
+      <li>Lambda Cloud Functions</li>
+      <li>Pusher (real-time)</li>
+      <li>WordPress</li>
+      <li>Tailwind CSS</li>
+      <li><a style="color: #1C5D99;" href="#">View Full List Of Lessons</a></li>
+    </ul>
+
+    <h2 class="question">How much does it cost?</h2>
+    <p class="answer">Get immediate and lifetime access for <s class="full-price">$400</s> <strong>$199
+        USD.</strong></p>
+
+    <h2 class="question">How do I join?</h2>
+    <p class="answer" style="margin-bottom: 22px;">Use the button below to start your new career path.</p>
+    <div style="text-align: center;">
+      <a class="join-new-course-btn"
+        href="#">Join
+        Course Now</a>
+    </div>
+
+    <div class="instructor-panel">
+
+      <img class="brad-photo" src="images/sai.jpg" alt="Sai Kwan">
+      <div class="instructor-panel-interior">
+        <h3>Financial Advisor</h3>
+        <h4>Sai Kwan</h4>
+        <ul>
+          <li><strong>20</strong> years experience in web development</li>
+          <li><strong>242,000</strong> online students</li>
+          <li><strong>337,000</strong> YouTube Subscribers</li>
+          <li><strong>1</strong> passion for teaching</li>
+        </ul>
+        <div class="instructor-btn-wrap">
+          <a class="instructor-btn"
+            href="#">Join
+            Course</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="full-site-links">
+      <p class="footer-text">&copy; 2024</p>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- Dynamic page generated in 0.051 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2024-01-15 19:32:10 -->
+
+<!-- super cache -->
